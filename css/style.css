@@ -4,27 +4,62 @@
     box-sizing: border-box;
 }
 
-#wrapper {
+body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 2fr,1fr,1fr;
-    grid-template-rows: 1fr,4fr,1fr;
+    grid-template-columns: 2fr,minmax(100px,1fr),minmax(100px,1fr);
+    grid-template-rows: minmax(100px,1fr),4fr,minmax(100px,1fr);
     grid-template-areas: 
-        "he he he"
-        "fi fi fi"
-        "fo fo fo"
+        "he he he na"
+        "fi fi fi fi"
+        "fi fi fi fi"
+        "fi fi fi fi"
+        "fi fi fi fi"
+        "fo fo fo fo"
     ;
 }
 
 header {
     grid-area: he;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+nav {
+    grid-area: na;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#meny {
+    display: flex;
+    order: 1;
+    flex: 1;
+}
+
+#om_oss {
+    display: flex;
+    order: 2;
+    flex: 1;
+}
+
+#hem {
+    display: flex;
+    order: 3;
+    flex: 1;
 }
 
 figure {
     grid-area: fi;
+    background: lightskyblue;
 }
 
 footer {
     grid-area: fo;
+    background: lightpink;
 }
