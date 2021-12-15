@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
@@ -12,10 +13,10 @@ body {
     grid-template-rows: minmax(100px,1fr),4fr,minmax(100px,1fr);
     grid-template-areas: 
         "he he he na"
-        "fi fi fi fi"
-        "fi fi fi fi"
-        "fi fi fi fi"
-        "fi fi fi fi"
+        "di di di di"
+        "di di di di"
+        "di di di di"
+        "di di di di"
         "fo fo fo fo"
     ;
 }
@@ -26,6 +27,7 @@ header {
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    background: rgb(189, 189, 231);
 }
 
 nav {
@@ -34,6 +36,30 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background: rgb(189, 189, 231);
+}
+
+div {
+    grid-area: di;
+    display: flex;
+}
+
+.img_om_oss {
+    display: flex;
+    align-items: stretch;
+    justify-content: left;
+    flex-direction: row;
+}
+
+article {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+footer {
+    grid-area: fo;
+    background: black;
 }
 
 #meny {
@@ -52,14 +78,4 @@ nav {
     display: flex;
     order: 3;
     flex: 1;
-}
-
-figure {
-    grid-area: fi;
-    background: lightskyblue;
-}
-
-footer {
-    grid-area: fo;
-    background: lightpink;
 }
