@@ -27,7 +27,7 @@ header {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    background: rgb(189, 189, 231);
+    background: rgb(201, 201, 228);
 }
 
 nav {
@@ -36,30 +36,50 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: rgb(189, 189, 231);
+    background: rgb(201, 201, 228);
 }
 
 div {
     grid-area: di;
     display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-around;
 }
 
-.img_om_oss {
-    display: flex;
-    align-items: stretch;
-    justify-content: left;
-    flex-direction: row;
+#beef {
+    order: 1;
+}
+
+#muffin {
+    order: 3;
 }
 
 article {
-    display: flex;
-    align-items: flex-end;
-    justify-content: right;
+    order: 2;
+}
+
+#meny_ratter {
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+#meny_div {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#hem_article {
+    order: 1;
+}
+
+#dough {
+    order: 2;
 }
 
 footer {
     grid-area: fo;
-    background: black;
+    background: rgb(163, 163, 219);
 }
 
 #meny {
