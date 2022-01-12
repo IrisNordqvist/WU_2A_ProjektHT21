@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr,minmax(100px,1fr),minmax(100px,1fr);
-    grid-template-rows: minmax(100px,1fr),4fr,minmax(100px,1fr);
+    grid-template-rows: 1fr,4fr,1fr;
     grid-template-areas: 
         "he he he na"
         "di di di di"
@@ -45,6 +45,8 @@ div {
     align-items: center;
     align-content: flex-start;
     justify-content: space-around;
+    color: white;
+    background: url(https://images.unsplash.com/photo-1527542146552-9e862c46e596?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
 }
 
 #beef {
@@ -75,6 +77,7 @@ article {
 
 #dough {
     order: 2;
+    border-radius: 20px 20px;
 }
 
 footer {
