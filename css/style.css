@@ -27,7 +27,7 @@ header {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    background: rgb(201, 201, 228);
+    background: rgb(180, 180, 231);
 }
 
 nav {
@@ -36,7 +36,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: rgb(201, 201, 228);
+    background: rgb(180, 180, 231);
 }
 
 div {
@@ -50,25 +50,36 @@ div {
 }
 
 #beef {
-    order: 1;
-}
-
-#muffin {
-    order: 3;
-}
-
-article {
     order: 2;
 }
 
-#meny_ratter {
-    border: 10px solid black;
+#muffin {
+    order: 4;
+}
+
+#historia {
+    order: 1;
+}
+
+#framtid {
+    order: 3;
+}
+
+.om_oss_a {
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.meny_ratter {
+    border: 5px solid rgb(84, 105, 221);
     border-radius: 20px;
 }
 
 #meny_div {
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 #hem_article {
@@ -82,7 +93,7 @@ article {
 
 footer {
     grid-area: fo;
-    background: rgb(163, 163, 219);
+    background: rgb(123, 123, 172);
 }
 
 #meny {
@@ -101,4 +112,14 @@ footer {
     display: flex;
     order: 3;
     flex: 1;
+}
+
+a  {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(252, 252, 253);
+    text-decoration: none;
 }
