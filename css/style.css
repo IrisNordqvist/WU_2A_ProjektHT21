@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr,minmax(100px,1fr),minmax(100px,1fr);
-    grid-template-rows: 1fr,4fr,1fr;
+    grid-template-rows: 1fr,4fr,100px;
     grid-template-areas: 
         "he he he na"
         "di di di di"
@@ -66,13 +66,15 @@ div {
 }
 
 .om_oss_a {
-    border: 5px solid white;
+    border: 3px solid white;
     border-radius: 10px;
+    background: black;
 }
 
 .meny_ratter {
     border: 5px solid rgb(84, 105, 221);
     border-radius: 20px;
+    background-color: black;
 }
 
 #meny_div {
@@ -94,6 +96,8 @@ div {
 footer {
     grid-area: fo;
     background: rgb(123, 123, 172);
+    display: flex;
+    flex-direction: column;
 }
 
 #meny {
